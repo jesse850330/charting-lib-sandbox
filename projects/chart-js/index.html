@@ -11,90 +11,25 @@
 </head>
 
 <body>
-    <h1>Gym's ice cream figures</h1>
-    <p class="chart-text">The local ice cream shop keeps track of how much ice cream they sell versus the noon temperature on that day. Here are
-        their figures for the last 12 days:</p>
-    <canvas id="myChart" width="800" height="800"></canvas>
+    <div class="container">
+        <div class="graph">
+            <h1>Gym's ice cream figures</h1>
+            <p class="chart-text">The local ice cream shop keeps track of how much ice cream they sell versus the noon temperature on that day. Here are
+                their figures for the last 12 days:</p>
+            <canvas id="myChart"></canvas>
+        </div><!-- / scatter graph -->
+
+        <div class="graph">
+            <h1>Statistics NZ Male Median Figures</h1>
+            <canvas id="lineChart"></canvas>
+        </div>
+
+    </div><!-- / container -->
     <div class="link-div"><a href="../../index.html">Back to home</a></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
-    <script>
-        var ctx = document.getElementById("myChart").getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'scatter',
-            data: {
-                datasets: [{
-                    label: 'Data',
-                    borderColor: 'rgba(255, 0, 0, 0.6)',
-                    backgroundColor: 'rgba(255, 0, 0, 0.1)',
-                    data: [{
-                        x: 215,
-                        y: 14.2
-                    }, {
-                        x: 325,
-                        y: 16.4
-                    }, {
-                        x: 185,
-                        y: 11.9
-                    }, {
-                        x: 332,
-                        y: 15.2
-                    }, {
-                        x: 406,
-                        y: 18.5
-                    }, {
-                        x: 522,
-                        y: 22.1
-                    }, {
-                        x: 412,
-                        y: 19.4
-                    }, {
-                        x: 614,
-                        y: 25.1
-                    }, {
-                        x: 544,
-                        y: 23.4
-                    }, {
-                        x: 421,
-                        y: 18.1
-                    }, {
-                        x: 445,
-                        y: 22.6
-                    }, {
-                        x: 408,
-                        y: 17.2
-                    },]
-                }],
-            },
-            options: {
-                responsive: false,
-                title: {
-                    text: 'Amount of ice cream bought based on temperature',
-                    display: true
-                },
-                scales: {
-                    xAxes: [{
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'Ice cream sales ($)'
-                        },
-                        type: 'linear',
-                        position: 'bottom',
-                        display: true
-                    }],
-                    yAxes: [{
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'Temperature ℃'
-                        },
-                        type: 'linear',
-                        position: 'left',
-                        display: true
-                    }]
-                }
-            }
-        });
-    </script>
+    <script src="js/scatter.js"></script>
+    <script src="js/line.js"></script>
 </body>
 
 </html>
