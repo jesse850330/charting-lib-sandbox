@@ -6,6 +6,17 @@ var ctx = document.getElementById("lineChart").getContext('2d');
                     label: 'Data',
                     borderColor: 'rgba(255, 0, 0, 0.6)',
                     backgroundColor: 'rgba(255, 0, 0, 0.1)',
+                    pointBorderColor: ['rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)',
+                                        'rgba(0, 0, 0, 0.8)'],
+                    pointRadius: [5,5,5,5,5,5,5,5,5,5],
                     data: [{
                         x: 2007,
                         y: 35.3

@@ -26,9 +26,9 @@ h1 {
 }
 
 
-#myChart {
-    margin: auto;
-    padding-top: 50px;
+canvas {
+    padding: 50px 0;
+    border-bottom: 1px solid #222;
 }
 
 .link-div {
