@@ -31,3 +31,5 @@ What are your hobbies?
 With faster internet how much time on average are you spending on each hobby?
 
 How much internet would you say you use within a month (in GB)?
+
+How often would you use the internet in a single day?
