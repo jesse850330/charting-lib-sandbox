@@ -1,0 +1,19 @@
+body{
+    margin-top:50px;
+}
+#myChart{
+    margin:0 auto;
+}
+
+.heading h1{
+   width:100vw; 
+text-align:center;
+font-size:20px;
+font-family: 'Merriweather', serif;
+color:#B20707;
+}
+.heading p{
+   width:100vw; 
+text-align:center;
+font-size:10px;
+font-family: 'Roboto', sans-serif;}
