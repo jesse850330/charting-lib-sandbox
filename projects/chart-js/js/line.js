@@ -3,7 +3,7 @@ var ctx = document.getElementById("lineChart").getContext('2d');
             type: 'line',
             data: {
                 datasets: [{
-                    label: 'Data',
+                    label: 'Age',
                     borderColor: 'rgba(255, 0, 0, 0.6)',
                     backgroundColor: 'rgba(255, 0, 0, 0.1)',
                     pointBorderColor: ['rgba(0, 0, 0, 0.8)',
@@ -54,6 +54,9 @@ var ctx = document.getElementById("lineChart").getContext('2d');
                 title: {
                     text: 'Median age of males in New Zealand over the past ten years',
                     display: true
+                },
+                legend: {
+                    display: false
                 },
                 scales: {
                     xAxes: [{
