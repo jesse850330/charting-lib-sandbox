@@ -26,12 +26,7 @@ What ISP do you use?
 
 What type of internet do you have?
 
-What are your hobbies?
+What suburb are you currently residing in?
 
-How much time do you spend on your hobbies a week?
+How long have you been with this ISP?
 
-With faster internet how much time on average are you spending on each hobby?
-
-How much internet would you say you use within a month (in GB)?
-
-How often would you use the internet in a single day?
