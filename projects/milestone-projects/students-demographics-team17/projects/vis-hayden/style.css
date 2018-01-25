@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    font-family: 'Monserrat Alternatives', sans-serif;
+}
+
+.container {
+    width: 70vw;
+    margin: 0 auto;
+}
