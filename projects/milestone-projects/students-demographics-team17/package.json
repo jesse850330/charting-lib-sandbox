@@ -1,0 +1,15 @@
+{
+  "name": "students-demographics-team17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hayden Wrathall, Victor Yang, Mike Hopping, Dan Agnew",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.7.1",
+    "highcharts": "^6.0.4"
+  }
+}
