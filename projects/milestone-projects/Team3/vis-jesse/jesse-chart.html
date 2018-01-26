@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Age Groups', 'Yes', 'No'],
+          ['18 - 21', 1, 1],
+          ['22 - 25', 0.05, 1],
+          ['26 - 29', 3, 0.05],
+          ['over 30', 3, 0.05]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Get a job relevant to Web UX in the future',
+            subtitle:'When the age group going up, more people want to get a job in the Web UX area.',
+            legend: 'none'
+            },
+          vAxis: {
+            title: 'Number of people',
+            viewWindow:{
+             max: 5,
+             min: 0
+             }
+            }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+  </body>
+</html>
